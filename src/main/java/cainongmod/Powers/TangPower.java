@@ -48,8 +48,8 @@ public class TangPower extends AbstractPower {
         this.amount = Amount;
 
         // 添加一大一小两张能力图
-        String path128 = "cainongmodResources/img/powers/TangPower84.png";
-        String path48 = "cainongmodResources/img/powers/TangPower32.png";
+        String path128 = "powers/TangPower84.png";
+        String path48 = "powers/TangPower32.png";
         this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path128)), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path48)), 0, 0, 32, 32);
 
@@ -77,15 +77,31 @@ public class TangPower extends AbstractPower {
                 @Override
                 public void update() {
                     ArrayList<AbstractCard> cardGroup = new ArrayList<>(AbstractDungeon.player.hand.group);
-                    if (isAutoPlay) {
-                        cardGroup.removeIf(c -> canUseCard(c));
-                    }else {
-                        cardGroup.removeIf(c -> c.cost > EnergyPanel.getCurrentEnergy() && !c.freeToPlay() || canUseCard(c));
-                    }
+                 if (isAutoPlay) {
+    for (int i = cardGroup.size() - 1; i >= 0; i--) {
+        AbstractCard c = cardGroup.get(i);
+        if (canUseCard(c)) {
+            cardGroup.remove(i);
+        }
+    }
+} else {
+    for (int i = cardGroup.size() - 1; i >= 0; i--) {
+        AbstractCard c = cardGroup.get(i);
+        if (c.cost > EnergyPanel.getCurrentEnergy() && !c.freeToPlay() || canUseCard(c)) {
+            cardGroup.remove(i);
+        }
+    }
+}
 
-                    if (owner.hasPower(EntanglePower.POWER_ID)) {
-                        cardGroup.removeIf(c -> c.type == AbstractCard.CardType.ATTACK);
-                    }
+if (owner.hasPower(EntanglePower.POWER_ID)) {
+    for (int i = cardGroup.size() - 1; i >= 0; i--) {
+        AbstractCard c = cardGroup.get(i);
+        if (c.type == AbstractCard.CardType.ATTACK) {
+            cardGroup.remove(i);
+        }
+    }
+}
+
 
                     if (!cardGroup.isEmpty()) {
                         this.addToTop(new PlayRandomCardAction(AbstractDungeon.getCurrRoom().monsters.getRandomMonster(null, true, AbstractDungeon.cardRandomRng), false, isAutoPlay,true));

@@ -32,8 +32,8 @@ public class NongHeiPower extends AbstractPower {
         this.amount = Amount;
 
         // 添加一大一小两张能力图
-        String path128 = "cainongmodResources/img/powers/NongHeiPower84.png";
-        String path48 = "cainongmodResources/img/powers/NongHeiPower32.png";
+        String path128 = "powers/NongHeiPower84.png";
+        String path48 = "powers/NongHeiPower32.png";
         this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path128)), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path48)), 0, 0, 32, 32);
 

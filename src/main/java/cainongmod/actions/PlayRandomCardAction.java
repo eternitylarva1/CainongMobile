@@ -56,14 +56,31 @@ public class PlayRandomCardAction extends AbstractGameAction {
             AbstractCard card;
             ArrayList<AbstractCard> cardGroup = new ArrayList<>(AbstractDungeon.player.hand.group);
             if (!isAutoPlay) {
-                cardGroup.removeIf(c -> c.cost > EnergyPanel.getCurrentEnergy() && !c.freeToPlay() || canUseCard(c));
-            } else  {
-                cardGroup.removeIf(c -> canUseCard(c));
+                for (int i = cardGroup.size() - 1; i >= 0; i--) {
+                    AbstractCard c = cardGroup.get(i);
+                    if (c.cost > EnergyPanel.getCurrentEnergy() && !c.freeToPlay() || canUseCard(c)) {
+                        cardGroup.remove(i);
+                    }
+                }
+            } else {
+                for (int i = cardGroup.size() - 1; i >= 0; i--) {
+                    AbstractCard c = cardGroup.get(i);
+                    if (canUseCard(c)) {
+                        cardGroup.remove(i);
+                    }
+                }
             }
 
-            if (p.hasPower(EntanglePower.POWER_ID)) {
-                cardGroup.removeIf(c -> c.type == AbstractCard.CardType.ATTACK);
-            }
+
+           if (p.hasPower(EntanglePower.POWER_ID)) {
+    for (int i = cardGroup.size() - 1; i >= 0; i--) {
+        AbstractCard c = cardGroup.get(i);
+        if (c.type == AbstractCard.CardType.ATTACK) {
+            cardGroup.remove(i);
+        }
+    }
+}
+
 
             if (cardGroup.isEmpty()) {
                 this.isDone = true;

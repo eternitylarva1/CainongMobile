@@ -7,7 +7,6 @@ import com.megacrit.cardcrawl.actions.common.RelicAboveCreatureAction;
 import com.megacrit.cardcrawl.android.mods.AssetLoader;
 import com.megacrit.cardcrawl.android.mods.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
-import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.helpers.PowerTip;
@@ -20,7 +19,7 @@ public class NeowsEnjoying extends CustomRelic {
     // 遗物ID（此处的ModHelper在“04 - 本地化”中提到）
     public static final String ID =  cainongmod.makeId("NeowsEnjoying");
     // 图片路径
-    private static final String IMG_PATH = "cainongmodResources/img/relics/NeowsEnjoying.png";
+    private static final String IMG_PATH = cainongmod.getResourcePath("relics/NeowsEnjoying.png");
     // 遗物类型
     private static final RelicTier RELIC_TIER = RelicTier.SPECIAL;
     // 点击音效
@@ -55,7 +54,6 @@ public class NeowsEnjoying extends CustomRelic {
                 m.currentHealth = 1;
                 m.healthBarUpdatedEvent();
                 if (m.type.equals(AbstractMonster.EnemyType.BOSS)) {
-                    CardCrawlGame.sound.play("PiaoBoss");
                 }
             }
 
@@ -75,15 +73,23 @@ public class NeowsEnjoying extends CustomRelic {
     public void obtain() {
         AbstractPlayer player = AbstractDungeon.player;
         if (player.hasRelic(NeowsLament.ID)) {
-            player.relics.stream()
-                    .filter(r -> r instanceof NeowsLament)
-                    .findFirst()
-                    .map(r -> player.relics.indexOf(r))
-                    .ifPresent(index
-                            -> instantObtain(player, index, false));
-            this.flash();
-        }else super.obtain();
+            int index = -1;
+            for (int i = 0; i < player.relics.size(); i++) {
+                AbstractRelic relic = player.relics.get(i);
+                if (relic instanceof NeowsLament) {
+                    index = i;
+                    break;
+                }
+            }
+            if (index != -1) {
+                instantObtain(player, index, false);
+                this.flash();
+            }
+        } else {
+            super.obtain();
+        }
     }
+
 
     @Override
     public void onEquip() {

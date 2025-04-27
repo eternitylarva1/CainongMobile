@@ -14,7 +14,7 @@ public class OldComputer extends CustomRelic {
     // 遗物ID（此处的ModHelper在“04 - 本地化”中提到）
     public static final String ID =  cainongmod.makeId("OldComputer");
     // 图片路径
-    private static final String IMG_PATH = "cainongmodResources/img/relics/OldComputer.png";
+    private static final String IMG_PATH = cainongmod.getResourcePath("relics/OldComputer.png");
     // 遗物类型
     private static final RelicTier RELIC_TIER = RelicTier.STARTER;
     // 点击音效

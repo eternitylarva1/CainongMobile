@@ -37,8 +37,13 @@ public class DeleteCardAction extends AbstractGameAction {
                 int i = 0;
                 while(i < 4) {
                     AbstractCard.CardRarity finalCardRarity = getCardRarity(i);
-                    possibleCards.removeIf(c -> !c.rarity.equals(finalCardRarity) || c.cardID.equals("AscendersBane") || c.cardID.equals("CurseOfTheBell") || c.cardID.equals("Necronomicurse"));
-                    if (!possibleCards.isEmpty()) {
+                   for (int j = possibleCards.size() - 1; j >= 0; j--) {
+    AbstractCard c = possibleCards.get(j);
+    if (!c.rarity.equals(finalCardRarity) || c.cardID.equals("AscendersBane") || c.cardID.equals("CurseOfTheBell") || c.cardID.equals("Necronomicurse")) {
+        possibleCards.remove(j);
+    }
+}
+ if (!possibleCards.isEmpty()) {
                         break;
                     }
                     possibleCards = new ArrayList<>(AbstractDungeon.player.masterDeck.group);

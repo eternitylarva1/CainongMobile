@@ -12,7 +12,7 @@ public class NaiLong extends CustomRelic {
     // 遗物ID（此处的ModHelper在“04 - 本地化”中提到）
     public static final String ID =  cainongmod.makeId("NaiLong");
     // 图片路径
-    private static final String IMG_PATH = "cainongmodResources/img/relics/NaiLong.png";
+    private static final String IMG_PATH = cainongmod.getResourcePath("relics/NaiLong.png");
     // 遗物类型
     private static final RelicTier RELIC_TIER = RelicTier.COMMON;
     // 点击音效

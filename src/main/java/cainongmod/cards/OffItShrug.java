@@ -1,7 +1,7 @@
 package cainongmod.cards;
 
 
-import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
+import cainongmod.helpers.ModHelper;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static cainongmod.cainongmod.getResourcePath;
 import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class OffItShrug extends CustomCard {
@@ -20,7 +21,7 @@ public class OffItShrug extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     // private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME; // 读取本地化的名字
-    private static final String IMG_PATH = "cainongmodResources/img/cards/OffItShrug_Skill.png";
+    private static final String IMG_PATH ="cards/OffItShrug_Skill.png";
     private static final int COST = 1;
     // private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION; // 读取本地化的描述
@@ -79,7 +80,7 @@ public class OffItShrug extends CustomCard {
                 this.target = CardTarget.ENEMY;
                 this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
                 this.initializeDescription();
-                this.loadCardImage("cainongmodResources/img/cards/OffItShrug_Attack.png");
+                this.loadCardImage(getResourcePath("cards/OffItShrug_Attack.png"));
                 if (upgraded) {
                     this.upgradeMagicNumber(1);
                 }
@@ -88,7 +89,7 @@ public class OffItShrug extends CustomCard {
                 this.target = CardTarget.SELF;
                 this.rawDescription = CARD_STRINGS.DESCRIPTION;
                 this.initializeDescription();
-                this.loadCardImage("cainongmodResources/img/cards/OffItShrug_Skill.png");
+                this.loadCardImage(getResourcePath("cards/OffItShrug_Skill.png"));
                 if (upgraded) {
                     this.upgradeMagicNumber(-1);
                 }

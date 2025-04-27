@@ -15,7 +15,7 @@ public class Factory extends CustomRelic {
     // 遗物ID（此处的ModHelper在“04 - 本地化”中提到）
     public static final String ID =  cainongmod.makeId("Factory");
     // 图片路径
-    private static final String IMG_PATH = "cainongmodResources/img/relics/Factory.png";
+    private static final String IMG_PATH = cainongmod.getResourcePath("relics/Factory.png");
     // 遗物类型
     private static final RelicTier RELIC_TIER = RelicTier.BOSS;
     // 点击音效
@@ -35,19 +35,27 @@ public class Factory extends CustomRelic {
     }
 
 
-    @Override
-    public void obtain() {
-        AbstractPlayer player = AbstractDungeon.player;
-        if (player.hasRelic(OldComputer.ID)) {
-            player.relics.stream()
-                    .filter(r -> r instanceof OldComputer)
-                    .findFirst()
-                    .map(r -> player.relics.indexOf(r))
-                    .ifPresent(index
-                            -> instantObtain(player, index, true));
+@Override
+public void obtain() {
+    AbstractPlayer player = AbstractDungeon.player;
+    if (player.hasRelic(OldComputer.ID)) {
+        int index = -1;
+        for (int i = 0; i < player.relics.size(); i++) {
+            AbstractRelic relic = player.relics.get(i);
+            if (relic instanceof OldComputer) {
+                index = i;
+                break;
+            }
+        }
+        if (index != -1) {
+            instantObtain(player, index, true);
             this.flash();
-        }else super.obtain();
+        }
+    } else {
+        super.obtain();
     }
+}
+
 
     @Override
     public void atBattleStart() {

@@ -1,8 +1,10 @@
 package cainongmod;
 
+import cainongmod.cards.*;
 import cainongmod.character.Mycharacter;
 import cainongmod.enums.CardColorEnum;
 import cainongmod.enums.LibraryTypeEnum;
+import cainongmod.relics.*;
 import com.badlogic.gdx.graphics.Color;
 import com.megacrit.cardcrawl.android.mods.BaseMod;
 import com.megacrit.cardcrawl.android.mods.helpers.CardColorBundle;
@@ -10,6 +12,8 @@ import com.megacrit.cardcrawl.android.mods.interfaces.*;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
+
+import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class cainongmod implements EditCardsSubscriber,
                                        PostInitializeSubscriber,
@@ -29,7 +33,7 @@ public class cainongmod implements EditCardsSubscriber,
     public cainongmod() {
         BaseMod.subscribe(this);
         CardColorBundle bundle = new CardColorBundle();
-        bundle.cardColor = CardColorEnum.CAINONG_CARD;
+        bundle.cardColor = CAINONG_CARD;
         bundle.modId = MOD_ID;
         bundle.bgColor =
             bundle.cardBackColor =
@@ -58,17 +62,98 @@ public class cainongmod implements EditCardsSubscriber,
     }
 
     public static String getResourcePath(String path) {
-        return "CainongmodResources/" + path;
+        return "CaiNongModResources/img/" + path;
     }
 
     @Override
     public void receiveEditCards() {
-
+        BaseMod.addCard(new Strike());
+        BaseMod.addCard(new Defend());
+        BaseMod.addCard(new PaiDianDian());
+        BaseMod.addCard(new SuoKai());
+        BaseMod.addCard(new CandyBall());
+        BaseMod.addCard(new BideTime());
+        BaseMod.addCard(new NongEye());
+        BaseMod.addCard(new NongOfAllTrades());
+        BaseMod.addCard(new AreYouTwoLoong());
+        BaseMod.addCard(new Nongdial());
+        BaseMod.addCard(new Jimi());
+        BaseMod.addCard(new Nongserk());
+        BaseMod.addCard(new RoastPig());
+        BaseMod.addCard(new UncleOfChild());
+        BaseMod.addCard(new LookForUncleOfChild());
+        BaseMod.addCard(new DefendToKill());
+        BaseMod.addCard(new AttackToKill());
+        BaseMod.addCard(new WhirlingAroundLikeAClown());
+        BaseMod.addCard(new UnmannedForm());
+        BaseMod.addCard(new InstantKill());
+        BaseMod.addCard(new DeckIsTooBig());
+        BaseMod.addCard(new SealGuide());
+        BaseMod.addCard(new JammedStart());
+        BaseMod.addCard(new TangInfinite());
+        BaseMod.addCard(new NongBarricade());
+        BaseMod.addCard(new NongEntrench());
+        BaseMod.addCard(new NongBox());
+        BaseMod.addCard(new ROSL());
+        BaseMod.addCard(new DirectTraffic());
+        BaseMod.addCard(new AllTheSame());
+        BaseMod.addCard(new DrainPigBlood());
+        BaseMod.addCard(new DrainPigBlood());
+        BaseMod.addCard(new JoeyWheelerTheSpire());
+        BaseMod.addCard(new Protect());
+        BaseMod.addCard(new Thirsty());
+        BaseMod.addCard(new HuiShi());
+        BaseMod.addCard(new MappingFunction());
+        BaseMod.addCard(new ParentsMeeting());
+        BaseMod.addCard(new TangCry());
+        BaseMod.addCard(new TangOfThreeWaves());
+        BaseMod.addCard(new FlameBarrier());
+        BaseMod.addCard(new NongSearing());
+        BaseMod.addCard(new NongWalk());
+        BaseMod.addCard(new Belly());
+        BaseMod.addCard(new Demand());
+        BaseMod.addCard(new GoodSeed());
+        BaseMod.addCard(new BadSeed());
+        BaseMod.addCard(new DoNothing());
+        BaseMod.addCard(new Epilepsy());
+        BaseMod.addCard(new AllCorrect());
+        BaseMod.addCard(new Ladybird());
+        BaseMod.addCard(new DuckGuide());
+        BaseMod.addCard(new IAmNotWilling());
+        BaseMod.addCard(new CarnageRuinTheRedPants());
+        BaseMod.addCard(new GarenMen());
+        BaseMod.addCard(new TooSick());
+        BaseMod.addCard(new HeadChase());
+        BaseMod.addCard(new BugBlade());
+        BaseMod.addCard(new OffItShrug());
+        BaseMod.addCard(new WhiteLotusPuzzle());
+        BaseMod.addCard(new WarMachine());
+        BaseMod.addCard(new GoodTransitionCaltrops());
+        BaseMod.addCard(new NongAbacus());
+        BaseMod.addCard(new MuscleMemory());
+        BaseMod.addCard(new SpireArtist());
+        BaseMod.addCard(new NoseNib());
+        BaseMod.addCard(new DeleteCard());
+        BaseMod.addCard(new TangLaugh());
+        BaseMod.addCard(new Storytelling());
+        BaseMod.addCard(new FireRaid());
+        BaseMod.addCard(new YouKnowWhyISay());
+        BaseMod.addCard(new Snack());
+        BaseMod.addCard(new TortureAudience());
+        BaseMod.addCard(new Trance());
+        BaseMod.addCard(new Statuette());
+        BaseMod.addCard(new SLGod());
+        BaseMod.addCard(new DisgustingAudience());
+        BaseMod.addCard(new DeadBranch());
+        BaseMod.addCard(new GetInside());
+        BaseMod.addCard(new FunkYou());
+        BaseMod.addCard(new Kawhi());
+        BaseMod.addCard(new EnterTheStream());
     }
 
     @Override
     public void receivePostInitialize() {
-        BaseMod.getColorBundleMap().get(CardColorEnum.CAINONG_CARD).loadRegion();
+        BaseMod.getColorBundleMap().get(CAINONG_CARD).loadRegion();
 
     }
 
@@ -92,7 +177,14 @@ public class cainongmod implements EditCardsSubscriber,
 
     @Override
     public void receiveEditRelics() {
-
+        BaseMod.addRelicToCustomPool(new BoiledPeanut(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new PinkTShirt(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new NeowsEnjoying(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new TangPill(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new OldComputer(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new NaiLong(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new PensionFond(), CAINONG_CARD);
+        BaseMod.addRelicToCustomPool(new Factory(), CAINONG_CARD);
     }
 
     @Override
