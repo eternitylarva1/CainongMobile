@@ -46,12 +46,12 @@ public class cainongmod implements EditCardsSubscriber,
         bundle.attackBg = getResourcePath("512/bg_attack_512.png");
         bundle.skillBg = getResourcePath("512/bg_skill_512.png");
         bundle.powerBg = getResourcePath("512/bg_power_512.png");
-        bundle.cardEnergyOrb = getResourcePath("char/card_orb.png");
+        bundle.cardEnergyOrb = getResourcePath("char/cost_orb.png");
         bundle.energyOrb = getResourcePath("char/small_orb.png");
         bundle.attackBgPortrait = getResourcePath("1024/bg_attack.png");
         bundle.skillBgPortrait = getResourcePath("1024/bg_skill.png");
         bundle.powerBgPortrait = getResourcePath("1024/bg_power.png");
-        bundle.energyOrbPortrait = getResourcePath("1024/cost_orb.png");
+        bundle.energyOrbPortrait = getResourcePath("char/card_orb.png");
         bundle.setEnergyPortraitWidth(164);
         bundle.setEnergyPortraitHeight(164);
         BaseMod.addColor(bundle);
@@ -189,19 +189,19 @@ public class cainongmod implements EditCardsSubscriber,
 
     @Override
     public void receiveEditKeywords() {
-        BaseMod.addKeyword("cainongmod", "唐", new String[]{"唐"}, "回合开始时随机使用X张手牌(消耗能量), 使用后层数减1。");
-        BaseMod.addKeyword("cainongmod", "农白", new String[]{"农白"}, "造成的伤害降低 #y25% 。");
-        BaseMod.addKeyword("cainongmod", "农黑", new String[]{"农黑"}, "造成的伤害提高 #y25% , 可以叠加。");
-        BaseMod.addKeyword("cainongmod", "弹幕", new String[]{"弹幕"}, "在手牌中时根据你上一张使用的其他牌的类型获得不同效果。 NL 攻击-辱骂 : NL 数值变为2倍 NL 技能-享受 : NL 直到打出前耗能变为0 NL 能力-独轮车 : NL 打出后回到手牌");
-        BaseMod.addKeyword("cainongmod", "点播", new String[]{"点播"}, "选择以下点播之一: NL 在3回合内结束战斗 NL 在7回合后结束战斗 NL 空过1回合 NL 在1回合中打出7张牌 NL #b农白苞米私募了");
-        BaseMod.addKeyword("cainongmod", "摆烂", new String[]{"摆烂"}, "-50(农白应得的)");
-        BaseMod.addKeyword("", "火焰吐息", new String[]{"火焰吐息"}, "抽到 状态 或 诅咒 牌时对所有敌人造成 X 点伤害 。");
-        BaseMod.addKeyword("", "发现", new String[]{"发现"}, "从三张牌种选择一张加入手牌。");
+        BaseMod.addKeyword( null, new String[]{"唐"}, "回合开始时随机使用X张手牌(消耗能量), 使用后层数减1。");
+        BaseMod.addKeyword(null, new String[]{"农白"}, "造成的伤害降低 #y25% 。");
+        BaseMod.addKeyword(null, new String[]{"农黑"}, "造成的伤害提高 #y25% , 可以叠加。");
+        BaseMod.addKeyword( null, new String[]{"弹幕"}, "在手牌中时根据你上一张使用的其他牌的类型获得不同效果。 NL 攻击-辱骂 : NL 数值变为2倍 NL 技能-享受 : NL 直到打出前耗能变为0 NL 能力-独轮车 : NL 打出后回到手牌");
+        BaseMod.addKeyword( null, new String[]{"点播"}, "选择以下点播之一: NL 在3回合内结束战斗 NL 在7回合后结束战斗 NL 空过1回合 NL 在1回合中打出7张牌 NL #b农白苞米私募了");
+        BaseMod.addKeyword( null, new String[]{"摆烂"}, "-50(农白应得的)");
+        BaseMod.addKeyword( null, new String[]{"火焰吐息"}, "抽到 状态 或 诅咒 牌时对所有敌人造成 X 点伤害 。");
+        BaseMod.addKeyword( null, new String[]{"发现"}, "从三张牌种选择一张加入手牌。");
     }
 
     @Override
     public void receiveEditCharacters() {
-        BaseMod.addCharacter(new Mycharacter(CardCrawlGame.playerName), MY_CHARACTER_BUTTON, MY_CHARACTER_PORTRAIT, CardColorEnum.Cangjie);
+        BaseMod.addCharacter(new Mycharacter(CardCrawlGame.playerName), MY_CHARACTER_BUTTON, MY_CHARACTER_PORTRAIT, CardColorEnum.CaiNong);
 
     }
 }

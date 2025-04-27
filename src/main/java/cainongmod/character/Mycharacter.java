@@ -89,7 +89,7 @@ public class Mycharacter extends CustomPlayer {
         this.refreshHitboxLocation();
     }
     public Mycharacter(String name) {
-        super(cainongmod.MOD_ID,name, CardColorEnum.Cangjie,null,getResourcePath("orb/vfx.png"), null, null, null);
+        super(cainongmod.MOD_ID,name, CardColorEnum.CaiNong,null,getResourcePath("orb/vfx.png"), null, null, null);
 
 
         // 人物对话气泡的大小，如果游戏中尺寸不对在这里修改（libgdx的坐标轴左下为原点）

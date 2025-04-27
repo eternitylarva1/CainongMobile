@@ -11,17 +11,17 @@
   },
   "cainongmod:PaiDianDian": {
     "NAME": "拍点点",
-    "DESCRIPTION": "造成 !D! 点伤害。 使其变为 cainongmod:农黑 。",
+    "DESCRIPTION": "造成 !D! 点伤害。 使其变为 农黑 。",
     "UPGRADE_DESCRIPTION":" "
   },
   "cainongmod:SuoKai": {
     "NAME": "嗦开嗦开",
-    "DESCRIPTION": "获得 !B! 点 格挡 。 使一个敌人变为 cainongmod:农白 。",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 使一个敌人变为 农白 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:CandyBall": {
     "NAME": "农化",
-    "DESCRIPTION": "获得 !M! 层 cainongmod:唐 。 NL 你的 cainongmod:唐 不会消耗能量。",
+    "DESCRIPTION": "获得 !M! 层 唐 。 NL 你的 唐 不会消耗能量。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:Rush": {
@@ -46,7 +46,7 @@
   },
   "cainongmod:AreYouTwoLoong": {
     "NAME": "你二龙吗?",
-    "DESCRIPTION": " cainongmod:弹幕 。 NL 对所有敌人造成 !D! 点伤害。",
+    "DESCRIPTION": " 弹幕 。 NL 对所有敌人造成 !D! 点伤害。",
     "UPGRADE_DESCRIPTION":" "
   },
   "cainongmod:Nongdial": {
@@ -61,8 +61,8 @@
   },
   "cainongmod:Nongserk": {
     "NAME": "农暴",
-    "DESCRIPTION": "使所有敌人变为 cainongmod:农黑 。 NL 每回合开始时获得 [E] 。",
-    "UPGRADE_DESCRIPTION": " 固有 。使所有敌人变为 cainongmod:农黑 。 NL 每回合开始时获得 [E] 。"
+    "DESCRIPTION": "使所有敌人变为 农黑 。 NL 每回合开始时获得 [E] 。",
+    "UPGRADE_DESCRIPTION": " 固有 。使所有敌人变为 农黑 。 NL 每回合开始时获得 [E] 。"
   },
   "cainongmod:RoastPig": {
     "NAME": "烤乳猪",
@@ -81,12 +81,12 @@
   },
   "cainongmod:DefendToKill": {
     "NAME": "防哈",
-    "DESCRIPTION": "获得 !B! 点 格挡 , 每有一个 cainongmod:农白 重复一次。",
+    "DESCRIPTION": "获得 !B! 点 格挡 , 每有一个 农白 重复一次。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:AttackToKill": {
     "NAME": "攻哈",
-    "DESCRIPTION": "造成 !D! 点伤害, 重复 cainongmod:农黑 的层数次。",
+    "DESCRIPTION": "造成 !D! 点伤害, 重复 农黑 的层数次。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:WhirlingAroundLikeAClown": {
@@ -101,7 +101,7 @@
   },
   "cainongmod:InstantKill": {
     "NAME": "笋干缪哈",
-    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 层 cainongmod:唐 。",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 层 唐 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:DeckIsTooBig": {
@@ -146,12 +146,12 @@
   },
   "cainongmod:DirectTraffic": {
     "NAME": "指挥交通",
-    "DESCRIPTION": "cainongmod:农黑 获得 !M! 层 易伤 。 NL cainongmod:农白 获得!M!层 虚弱 。 NL 使所有 cainongmod:农黑 和 cainongmod:农白 转换。 NL 获得 !B! 点 格挡 。",
+    "DESCRIPTION": "cainongmod:农黑 获得 !M! 层 易伤 。 NL 农白 获得!M!层 虚弱 。 NL 使所有 农黑 和 农白 转换。 NL 获得 !B! 点 格挡 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:AllTheSame": {
     "NAME": "谁来都一样",
-    "DESCRIPTION": "对所有敌人造成 !D! 点伤害, 使所有敌人变为 cainongmod:农黑 。",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害, 使所有敌人变为 农黑 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:DrainPigBlood": {
@@ -191,7 +191,7 @@
   },
   "cainongmod:TangOfThreeWaves": {
     "NAME": "唐氏三摆手",
-    "DESCRIPTION": "给予 !M! 层 虚弱 和 易伤 , 使其变为 cainongmod:农黑 , 使用3次后 消耗 。 ",
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 易伤 , 使其变为 农黑 , 使用3次后 消耗 。 ",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:TangCry": {
@@ -221,7 +221,7 @@
   },
   "cainongmod:Demand": {
     "NAME": "点播",
-    "DESCRIPTION": "获得 !M! 金币 。 NL 进行 cainongmod:点播 。 NL cainongmod:摆烂 时被 诅咒 。 NL 消耗 。 虚无 。",
+    "DESCRIPTION": "获得 !M! 金币 。 NL 进行 点播 。 NL 摆烂 时被 诅咒 。 NL 消耗 。 虚无 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:GoodSeed": {
@@ -247,7 +247,7 @@
   "cainongmod:AllCorrect": {
     "NAME": "全对",
     "DESCRIPTION": "cainongmod:弹幕 。 抽 !M! 张牌。 虚无 。",
-    "UPGRADE_DESCRIPTION": " cainongmod:弹幕 。 抽 !M! 张牌。"
+    "UPGRADE_DESCRIPTION": " 弹幕 。 抽 !M! 张牌。"
   },
   "cainongmod:Ladybird": {
     "NAME": "瓢虫",
@@ -271,8 +271,8 @@
   },
   "cainongmod:GarenMen":{
     "NAME": "噶人闷,闷闷闷",
-    "DESCRIPTION": "获得1个敌人 cainongmod:农黑 等级两倍的 力量 , 将其变为 cainongmod:农白 。",
-    "UPGRADE_DESCRIPTION": " 获得1个敌人 cainongmod:农黑 等级两倍的 力量 , 将其变为 cainongmod:农白 。 保留 。"
+    "DESCRIPTION": "获得1个敌人 农黑 等级两倍的 力量 , 将其变为 农白 。",
+    "UPGRADE_DESCRIPTION": " 获得1个敌人 农黑 等级两倍的 力量 , 将其变为 农白 。 保留 。"
   },
   "cainongmod:TooSick": {
     "NAME": "好②心啊",
@@ -326,7 +326,7 @@
   },
   "cainongmod:NoseNib": {
     "NAME": "尖塔武术",
-    "DESCRIPTION": " 每第 !M! 张攻击牌 NL 造成双倍伤害。 NL 每有1级 cainongmod:农黑 所需牌数减少1张 。",
+    "DESCRIPTION": " 每第 !M! 张攻击牌 NL 造成双倍伤害。 NL 每有1级 农黑 所需牌数减少1张 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:NongAbacus": {
@@ -336,7 +336,7 @@
   },
   "cainongmod:SpireArtist": {
     "NAME": "尖塔艺术家",
-    "DESCRIPTION": " 固有 。 NL 所有敌人在 !M! 回合后爆炸 。 获得 99 层 cainongmod:唐 。 消耗 。",
+    "DESCRIPTION": " 固有 。 NL 所有敌人在 !M! 回合后爆炸 。 获得 99 层 唐 。 消耗 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:GoodTransitionCaltrops": {
@@ -346,7 +346,7 @@
   },
   "cainongmod:Storytelling": {
     "NAME": "说书",
-    "DESCRIPTION": " cainongmod:弹幕 。 NL 获得 !B! 点格挡 ， 抽 !M! 张牌。",
+    "DESCRIPTION": " 弹幕 。 NL 获得 !B! 点格挡 ， 抽 !M! 张牌。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:DeleteCard": {
@@ -356,12 +356,12 @@
   },
   "cainongmod:TangLaugh": {
     "NAME": "唐笑",
-    "DESCRIPTION": " 使一个敌人变为 cainongmod:农黑 。 抽 !M! 张牌 。 NL 每有1级 cainongmod:农黑 多抽1张 。",
+    "DESCRIPTION": " 使一个敌人变为 农黑 。 抽 !M! 张牌 。 NL 每有1级 农黑 多抽1张 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:Snack": {
     "NAME": "吃零食",
-    "DESCRIPTION": " 下个回合获得 [E] [E] [E] 。 NL 获得 !M! 层 cainongmod:唐 。",
+    "DESCRIPTION": " 下个回合获得 [E] [E] [E] 。 NL 获得 !M! 层 唐 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:TortureAudience": {
@@ -376,22 +376,22 @@
   },
   "cainongmod:Statuette": {
     "NAME": "缩头",
-    "DESCRIPTION": " 获得 !B! 点 格挡 。 NL 获得 !M! 层 cainongmod:唐 。",
+    "DESCRIPTION": " 获得 !B! 点 格挡 。 NL 获得 !M! 层 唐 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:SLGod": {
     "NAME": "SL大神",
-    "DESCRIPTION": " 使所有敌人变为 cainongmod:农白 。 保留 。 消耗 。",
-    "UPGRADE_DESCRIPTION": " 使所有敌人变为 cainongmod:农白 。 保留 。"
+    "DESCRIPTION": " 使所有敌人变为 农白 。 保留 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " 使所有敌人变为 农白 。 保留 。"
   },
   "cainongmod:DisgustingAudience": {
     "NAME": "恶心观众",
-    "DESCRIPTION": " 给予所有 cainongmod:农黑 或 cainongmod:农白 !M!层 易伤 和 虚弱 。 消耗 。",
+    "DESCRIPTION": " 给予所有 农黑 或 农白 !M!层 易伤 和 虚弱 。 消耗 。",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:FunkYou": {
     "NAME": "我驲里滴瘟",
-    "DESCRIPTION": " 随机对敌人造成 !D! 点伤害 !M! 次并使其变为 cainongmod:农黑 。 ",
+    "DESCRIPTION": " 随机对敌人造成 !D! 点伤害 !M! 次并使其变为 农黑 。 ",
     "UPGRADE_DESCRIPTION": " "
   },
   "cainongmod:GetInside": {
@@ -401,8 +401,8 @@
   },
   "cainongmod:Kawhi": {
     "NAME": "卡哇伊哈基米",
-    "DESCRIPTION": " 造成 !D! 点伤害。 如果目标敌人的意图是攻击, 则将其变为 cainongmod:农白 。 ",
-    "UPGRADE_DESCRIPTION": " 造成 !D! 点伤害。 将其变为 cainongmod:农白 。 "
+    "DESCRIPTION": " 造成 !D! 点伤害。 如果目标敌人的意图是攻击, 则将其变为 农白 。 ",
+    "UPGRADE_DESCRIPTION": " 造成 !D! 点伤害。 将其变为 农白 。 "
   },
   "cainongmod:EnterTheStream": {
     "NAME": "入川入烂",
