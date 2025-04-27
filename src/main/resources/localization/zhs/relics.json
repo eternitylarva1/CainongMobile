@@ -1,0 +1,59 @@
+{
+  "CaiNongMod:BoiledPeanut": {
+    "NAME": "老灶煮花生",
+    "FLAVOR": "无惧饥饿",
+    "DESCRIPTIONS": [
+      "当一张牌被 #y消耗 时, 获得 #y3 点 #y格挡 。"
+    ]
+  },
+  "CaiNongMod:PinkTShirt": {
+    "NAME": "粉色T恤",
+    "FLAVOR": "菜农来辣 (已腐蚀!)",
+    "DESCRIPTIONS": [
+      "受到的第一次伤害伤害降低 #y2 点, 回合开始时刷新 。"
+    ]
+  },
+  "CaiNongMod:NeowsEnjoying": {
+    "NAME": "涅奥的享受",
+    "FLAVOR": "来自碎农最多角色的祝福",
+    "DESCRIPTIONS": [
+      "获得一个特殊的 #r诅咒 , 下 #y3 场战斗敌人的生命只有 #y1 点。",
+      "这个祝福已经耗尽。"
+    ]
+  },
+  "CaiNongMod:TangPill": {
+    "NAME": "糖丸",
+    "FLAVOR": "能治好一切疾病, 但是代价是什么呢?",
+    "DESCRIPTIONS": [
+      "回合开始时获得 [E] , 每 #y3 回合结束时获得 #y1 层 #ycainongmod:唐 。"
+    ]
+  },
+  "CaiNongMod:OldComputer": {
+    "NAME": "老旧的电脑",
+    "FLAVOR": "'win7打不开植物大战僵尸 怎么个事哦。'",
+    "DESCRIPTIONS": [
+      "战斗开始时使一个随机敌人变为 #ycainongmod:农白 。"
+    ]
+  },
+  "CaiNongMod:NaiLong": {
+    "NAME": "奶龙",
+    "FLAVOR": "车甘没木了",
+    "DESCRIPTIONS": [
+      "每回合第一次以 #ycainongmod:唐 自动打出的牌会对随机目标使用 #y2 次。"
+    ]
+  },
+  "CaiNongMod:PensionFond": {
+    "NAME": "棺材本",
+    "FLAVOR": "保护金币噶人闷",
+    "DESCRIPTIONS": [
+      "每场战斗获得当前金币数量 #y10% 的金币 。一旦在商店中花费 金币 就会失效。"
+    ]
+  },
+  "CaiNongMod:Factory": {
+    "NAME": "工厂",
+    "FLAVOR": "拍点点摆烂的好日子到头了",
+    "DESCRIPTIONS": [
+      "替换 #y老旧的电脑 。战斗开始时使一个随机敌人变为 #ycainongmod:农黑 。 #ycainongmod:农黑 不会提升伤害并且受到的伤害增加 #y50% 。"
+    ]
+  }
+}

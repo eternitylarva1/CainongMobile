@@ -1,0 +1,412 @@
+{
+  "CaiNongMod:Strike": {
+    "NAME": "打击",
+    "DESCRIPTION": "造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":"造成 !D! 点伤害。"
+  },
+  "CaiNongMod:Defend": {
+    "NAME": "防御",
+    "DESCRIPTION": "获得 !B! 点格挡。",
+    "UPGRADE_DESCRIPTION": "获得 !B! 点 格挡 。"
+  },
+  "CaiNongMod:PaiDianDian": {
+    "NAME": "拍点点",
+    "DESCRIPTION": "造成 !D! 点伤害。 使其变为 cainongmod:农黑 。",
+    "UPGRADE_DESCRIPTION":" "
+  },
+  "CaiNongMod:SuoKai": {
+    "NAME": "嗦开嗦开",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 使一个敌人变为 cainongmod:农白 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:CandyBall": {
+    "NAME": "农化",
+    "DESCRIPTION": "获得 !M! 层 cainongmod:唐 。 NL 你的 cainongmod:唐 不会消耗能量。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Rush": {
+    "NAME": "冲刺！",
+    "DESCRIPTION": "造成 !D! 点伤害。 获得 !B! 点 格挡 。 每有1个连续使用 *冲刺！ 的回合, 重复1次 。 ",
+    "UPGRADE_DESCRIPTION":" "
+  },
+  "CaiNongMod:BideTime": {
+    "NAME": "按兵不动",
+    "DESCRIPTION": "结束回合。下回合获得8 活力 和 [E] 。 NL 本回合打出攻击牌后无法打出。 保留 。",
+    "UPGRADE_DESCRIPTION": "结束回合。下回合获得8 活力 和 [E] 。 NL 本回合打出攻击牌后无法打出。"
+  },
+  "CaiNongMod:NongEye": {
+    "NAME": "农眼",
+    "DESCRIPTION": "抽 !M! 张牌。 NL 随机化抽到的卡牌的能量消耗。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongOfAllTrades": {
+    "NAME": "农样百出",
+    "DESCRIPTION": "发现 !M! 张无色牌。",
+    "UPGRADE_DESCRIPTION": " 发现 !M! 张无色牌并 升级 。"
+  },
+  "CaiNongMod:AreYouTwoLoong": {
+    "NAME": "你二龙吗?",
+    "DESCRIPTION": " cainongmod:弹幕 。 NL 对所有敌人造成 !D! 点伤害。",
+    "UPGRADE_DESCRIPTION":" "
+  },
+  "CaiNongMod:Nongdial": {
+    "NAME": "农晷",
+    "DESCRIPTION": "每次洗牌时获得 [E] 。 虚无 。",
+    "UPGRADE_DESCRIPTION": "每次洗牌时获得 [E] 。 "
+  },
+  "CaiNongMod:Jimi": {
+    "NAME": "基米!",
+    "DESCRIPTION": "以随机顺序随机打出你的所有手牌。 NL  消耗 。",
+    "UPGRADE_DESCRIPTION": "以随机顺序随机打出你的所有手牌。"
+  },
+  "CaiNongMod:Nongserk": {
+    "NAME": "农暴",
+    "DESCRIPTION": "使所有敌人变为 cainongmod:农黑 。 NL 每回合开始时获得 [E] 。",
+    "UPGRADE_DESCRIPTION": " 固有 。使所有敌人变为 cainongmod:农黑 。 NL 每回合开始时获得 [E] 。"
+  },
+  "CaiNongMod:RoastPig": {
+    "NAME": "烤乳猪",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害 !M! 次。 将五张 *灼伤 洗入弃牌堆。",
+    "UPGRADE_DESCRIPTION":"对所有敌人造成 !D! 点伤害 !M! 次。 将三张 *灼伤 洗入弃牌堆。 "
+  },
+  "CaiNongMod:UncleOfChild": {
+    "NAME": "孩舅",
+    "DESCRIPTION": "抽到时对所有敌人造成 !D! 点伤害并 丢弃 。",
+    "UPGRADE_DESCRIPTION":" "
+  },
+  "CaiNongMod:LookForUncleOfChild": {
+    "NAME": "寻找失去的孩舅",
+    "DESCRIPTION": "将一张 *孩舅 洗入抽牌堆顶。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION":"将一张 *孩舅+ 洗入抽牌堆顶。 NL 消耗 。"
+  },
+  "CaiNongMod:DefendToKill": {
+    "NAME": "防哈",
+    "DESCRIPTION": "获得 !B! 点 格挡 , 每有一个 cainongmod:农白 重复一次。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:AttackToKill": {
+    "NAME": "攻哈",
+    "DESCRIPTION": "造成 !D! 点伤害, 重复 cainongmod:农黑 的层数次。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:WhirlingAroundLikeAClown": {
+    "NAME": "转来转去像个小丑",
+    "DESCRIPTION": "回合开始时 发现 !M! 张绿色牌。",
+    "UPGRADE_DESCRIPTION": "回合开始时 发现 !M! 张绿色牌并将其 升级 。"
+  },
+  "CaiNongMod:UnmannedForm": {
+    "NAME": "无人形态",
+    "DESCRIPTION": "获得 !M! 层 无实体 。 NL 打出攻击牌后失去所有 无实体 。 虚无 。",
+    "UPGRADE_DESCRIPTION": "获得 !M! 层 无实体 。 NL 打出攻击牌后失去所有 无实体 。 "
+  },
+  "CaiNongMod:InstantKill": {
+    "NAME": "笋干缪哈",
+    "DESCRIPTION": "造成 !D! 点伤害。 NL 获得 !M! 层 cainongmod:唐 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DeckIsTooBig": {
+    "NAME": "卡组太大了",
+    "DESCRIPTION": " 消耗 你的抽牌堆。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:SealGuide": {
+    "NAME": "豹指导",
+    "DESCRIPTION": "选择并打出 !M! 张手牌。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:JammedStart": {
+    "NAME": "卡我启动了",
+    "DESCRIPTION": " 消耗 抽牌堆顶的一张牌 。 造成 !D! 点伤害, 重复 消耗 的牌的费用次。",
+    "UPGRADE_DESCRIPTION": " 选择抽牌堆中的一张牌 消耗 。 造成 !D! 点伤害, 重复 消耗 的牌的费用次。"
+  },
+  "CaiNongMod:TangInfinite": {
+    "NAME": "唐氏无限",
+    "DESCRIPTION": "将 *亮剑 , *妙计 , *飞身踢 , *足跟勾 加入手牌。 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongBarricade": {
+    "NAME": "农垒",
+    "DESCRIPTION": "JUST *壁垒 ~",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongEntrench": {
+    "NAME": "农固",
+    "DESCRIPTION": "你的 格挡 翻倍。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongBox": {
+    "NAME": "农盒",
+    "DESCRIPTION": "固有 。 NL 消耗 所有打击防御, 随机替换为等量卡牌。 消耗 。",
+    "UPGRADE_DESCRIPTION": " 固有 。 NL 消耗 所有打击防御, 随机替换为等量卡牌。 消耗 。"
+  },
+  "CaiNongMod:ROSL": {
+    "NAME": "若种",
+    "DESCRIPTION": "结束回合时, 如果这张牌在你的手牌中, 则立即死亡。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DirectTraffic": {
+    "NAME": "指挥交通",
+    "DESCRIPTION": "cainongmod:农黑 获得 !M! 层 易伤 。 NL cainongmod:农白 获得!M!层 虚弱 。 NL 使所有 cainongmod:农黑 和 cainongmod:农白 转换。 NL 获得 !B! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:AllTheSame": {
+    "NAME": "谁来都一样",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害, 使所有敌人变为 cainongmod:农黑 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DrainPigBlood": {
+    "NAME": "放干猪血",
+    "DESCRIPTION": "抽2张牌, 获得 [E] 。 NL 将1张复制洗入抽牌堆并失去2点生命。",
+    "UPGRADE_DESCRIPTION": "抽2张牌, 获得 [E] [E] 。 NL 将1张复制洗入抽牌堆并失去2点生命。"
+  },
+  "CaiNongMod:JoeyWheelerTheSpire": {
+    "NAME": "尖塔橙汁瑞",
+    "DESCRIPTION": "有50%概率获得 [E] , NL 触发 !M! 次。 NL 有50%概率 消耗 。",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "CaiNongMod:Protect": {
+    "NAME": "保护",
+    "DESCRIPTION": "获得 !B! 点 格挡 , 使1张手牌能耗提高1点。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Thirsty": {
+    "NAME": "口渴",
+    "DESCRIPTION": "随机触发 !M! 瓶药水的效果。 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:HuiShi": {
+    "NAME": "搞点惠氏",
+    "DESCRIPTION": "造成 !D! 点伤害, 抽 1 张牌, 如果抽到技能牌则重复此效果。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:MappingFunction": {
+    "NAME": "映射函数",
+    "DESCRIPTION": "选择1张牌, 将3张复制洗入抽牌堆。 消耗 。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:ThreeCurse": {
+    "NAME": "家长会",
+    "DESCRIPTION": "造成 !D! 点伤害。 牌组中每有一张 诅咒 , 这张牌的伤害翻倍。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:TangOfThreeWaves": {
+    "NAME": "唐氏三摆手",
+    "DESCRIPTION": "给予 !M! 层 虚弱 和 易伤 , 使其变为 cainongmod:农黑 , 使用3次后 消耗 。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:TangCry": {
+    "NAME": "唐叫",
+    "DESCRIPTION": "对所有敌人造成 !D! 点伤害并使其本回合失去 !M! 点力量 X 次。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:FlameBarrier": {
+    "NAME": "火焰屏障输出特别高",
+    "DESCRIPTION": "获得 !B! 点 格挡 。 NL 你在这个回合每受到一次攻击，都对攻击者造成 !M! 点伤害。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongSearing": {
+    "NAME": "农灼",
+    "DESCRIPTION": "造成 !D! 点伤害 !M! 次。 NL 能被多次 升级 。 NL (随机提升一项属性)",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongWalk": {
+    "NAME": "农走",
+    "DESCRIPTION": "造成 !D! 点伤害, 本场战斗所有 *农走 伤害提升 !M! 点。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Belly": {
+    "NAME": "肚皮",
+    "DESCRIPTION": "造成你当前 格挡 值 !M! 倍的伤害。 NL 失去一半 格挡 。",
+    "UPGRADE_DESCRIPTION": " (造成 !D! 点伤害) "
+  },
+  "CaiNongMod:Demand": {
+    "NAME": "点播",
+    "DESCRIPTION": "获得 !M! 金币 。 NL 进行 cainongmod:点播 。 NL cainongmod:摆烂 时被 诅咒 。 NL 消耗 。 虚无 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:GoodSeed": {
+    "NAME": "爽种",
+    "DESCRIPTION": " !M! 回合内结束战斗",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:BadSeed": {
+    "NAME": "毒种",
+    "DESCRIPTION": " !M! 回合后结束战斗",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DoNothing": {
+    "NAME": "装唐",
+    "DESCRIPTION": "空过 !M! 回合",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Epilepsy": {
+    "NAME": "发癫",
+    "DESCRIPTION": "在1回合打出 !M! 张牌",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:AllCorrect": {
+    "NAME": "全对",
+    "DESCRIPTION": "cainongmod:弹幕 。 抽 !M! 张牌。 虚无 。",
+    "UPGRADE_DESCRIPTION": " cainongmod:弹幕 。 抽 !M! 张牌。"
+  },
+  "CaiNongMod:Ladybird": {
+    "NAME": "瓢虫",
+    "DESCRIPTION": "恢复 [E] 至能量上限, 本回合失去等量 力量 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DuckGuide": {
+    "NAME": "谁指导",
+    "DESCRIPTION": "获得已 升级 牌的张数的 格挡 。本场战斗中 升级 牌堆中的 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": " NL (获得 !B! 点格挡) "
+  },
+  "CaiNongMod:IAmNotWilling": {
+    "NAME": "我不甘心啊",
+    "DESCRIPTION": " 造成已损失的生命值的伤害。 消耗 。",
+    "UPGRADE_DESCRIPTION": " NL (造成 !D! 点伤害) "
+  },
+  "CaiNongMod:CarnageRuinTheRedPants": {
+    "NAME": "残杀毁了红裤衩",
+    "DESCRIPTION": " 造成 !D! 点伤害。 虚无 。抽到时抽 1 张耗能 2 以上的攻击牌。",
+    "UPGRADE_DESCRIPTION": "  "
+  },
+  "CaiNongMod:GarenMen":{
+    "NAME": "噶人闷,闷闷闷",
+    "DESCRIPTION": "获得1个敌人 cainongmod:农黑 等级两倍的 力量 , 将其变为 cainongmod:农白 。",
+    "UPGRADE_DESCRIPTION": " 获得1个敌人 cainongmod:农黑 等级两倍的 力量 , 将其变为 cainongmod:农白 。 保留 。"
+  },
+  "CaiNongMod:TooSick": {
+    "NAME": "好②心啊",
+    "DESCRIPTION": " 抽到 状态 牌时 抽取另一张 状态 牌并获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DeadBranch": {
+    "NAME": "没你想的那么简单",
+    "DESCRIPTION": " 你每消耗1张牌, 将 !M! 张随机红裤衩的牌置入手牌 。 ",
+    "UPGRADE_DESCRIPTION": "你每消耗1张牌, 将 !M! 张随机红裤衩的牌置入手牌 。 固有 。 "
+  },
+  "CaiNongMod:HeadChase": {
+    "NAME": "头追",
+    "DESCRIPTION": "造成 !D! 点伤害， NL 使抽牌堆和弃牌堆的一张牌交换 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:BugBlade": {
+    "NAME": "虫刃",
+    "DESCRIPTION": "造成 !D! 点伤害， NL 你的每层 能力 使伤害提高 !M! 点。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:MuscleMemory": {
+    "NAME": "肌肉记忆",
+    "DESCRIPTION": "本回合获得 !M! 点 力量 。在手牌中时 , 使用攻击牌使获得的 力量 提高2点。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:OffItShrug": {
+    "NAME": "耸视无肩",
+    "DESCRIPTION": " 获得 !B! 点 格挡 , 抽 !M! 张牌 。 NL 打出后切换为攻击牌 。",
+    "UPGRADE_DESCRIPTION": " 造成 !D! 点伤害, 抽 !M! 张牌 。 NL 打出后切换为技能牌 。"
+  },
+  "CaiNongMod:FireRaid": {
+    "NAME": "农焰吐息",
+    "DESCRIPTION": "获得 !M! 层 火焰吐息 。 NL 每回合开始时将1张 *灼伤 洗入抽牌堆 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:YouKnowWhyISay": {
+    "NAME": "牌烧完了我打什么",
+    "DESCRIPTION": " 获得 !B! 点 格挡 。随机 消耗 一张手牌 。释放X次 。",
+    "UPGRADE_DESCRIPTION": ""
+  },
+  "CaiNongMod:WarMachine": {
+    "NAME": "机械战神",
+    "DESCRIPTION": " 抽到时 获得 !M! 张 稀有度为特殊的攻击牌。 NL 然后 消耗 。",
+    "UPGRADE_DESCRIPTION": "抽到时 获得 !M! 张 稀有度为特殊的攻击牌并 升级 。然后 消耗 。 "
+  },
+  "CaiNongMod:WhiteLotusPuzzle": {
+    "NAME": "白莲积木",
+    "DESCRIPTION": "每回合第一次损失生命值时抽 !M! 张牌 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NoseNib": {
+    "NAME": "尖塔武术",
+    "DESCRIPTION": " 每第 !M! 张攻击牌 NL 造成双倍伤害。 NL 每有1级 cainongmod:农黑 所需牌数减少1张 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:NongAbacus": {
+    "NAME": "农盘",
+    "DESCRIPTION": " 每次抽牌或洗牌时 获得 !M! 点 格挡 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:SpireArtist": {
+    "NAME": "尖塔艺术家",
+    "DESCRIPTION": " 固有 。 NL 所有敌人在 !M! 回合后爆炸 。 获得 99 层 cainongmod:唐 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:GoodTransitionCaltrops": {
+    "NAME": "优质过渡铁蒺藜",
+    "DESCRIPTION": " 每回合开始时获得 !M! 层 荆棘 。 ",
+    "UPGRADE_DESCRIPTION": " 每回合开始时获得 !M! 层 荆棘 。 固有 。"
+  },
+  "CaiNongMod:Storytelling": {
+    "NAME": "说书",
+    "DESCRIPTION": " cainongmod:弹幕 。 NL 获得 !B! 点格挡 ， 抽 !M! 张牌。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:DeleteCard": {
+    "NAME": "删牌大于一切",
+    "DESCRIPTION": " 造成 !D! 点伤害 。 NL 斩杀 时花费75金币以随机删除一张稀有度最低的牌 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:TangLaugh": {
+    "NAME": "唐笑",
+    "DESCRIPTION": " 使一个敌人变为 cainongmod:农黑 。 抽 !M! 张牌 。 NL 每有1级 cainongmod:农黑 多抽1张 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Snack": {
+    "NAME": "吃零食",
+    "DESCRIPTION": " 下个回合获得 [E] [E] [E] 。 NL 获得 !M! 层 cainongmod:唐 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:TortureAudience": {
+    "NAME": "凌迟观众",
+    "DESCRIPTION": " 虚无 。 NL 等待3秒后造成 !D! 点伤害, 打出后返回手牌。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Trance": {
+    "NAME": "昏睡",
+    "DESCRIPTION": " 下回合睡一觉。本回合 格挡 保留。 NL 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Statuette": {
+    "NAME": "缩头",
+    "DESCRIPTION": " 获得 !B! 点 格挡 。 NL 获得 !M! 层 cainongmod:唐 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:SLGod": {
+    "NAME": "SL大神",
+    "DESCRIPTION": " 使所有敌人变为 cainongmod:农白 。 保留 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " 使所有敌人变为 cainongmod:农白 。 保留 。"
+  },
+  "CaiNongMod:DisgustingAudience": {
+    "NAME": "恶心观众",
+    "DESCRIPTION": " 给予所有 cainongmod:农黑 或 cainongmod:农白 !M!层 易伤 和 虚弱 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:FunkYou": {
+    "NAME": "我驲里滴瘟",
+    "DESCRIPTION": " 随机对敌人造成 !D! 点伤害 !M! 次并使其变为 cainongmod:农黑 。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:GetInside": {
+    "NAME": "搞里头",
+    "DESCRIPTION": "获得 !B! 点 格挡 。把 !M! 张手牌搞里头。下一次打出已经搞里头的牌。 ",
+    "UPGRADE_DESCRIPTION": " "
+  },
+  "CaiNongMod:Kawhi": {
+    "NAME": "卡哇伊哈基米",
+    "DESCRIPTION": " 造成 !D! 点伤害。 如果目标敌人的意图是攻击, 则将其变为 cainongmod:农白 。 ",
+    "UPGRADE_DESCRIPTION": " 造成 !D! 点伤害。 将其变为 cainongmod:农白 。 "
+  },
+  "CaiNongMod:EnterTheStream": {
+    "NAME": "入川入烂",
+    "DESCRIPTION": " 造成 !D! 点伤害 。击杀时获得目标最大生命值的 格挡 。 消耗 。",
+    "UPGRADE_DESCRIPTION": " "
+  }
+}
