@@ -35,8 +35,8 @@ public class SpireArtistPower extends AbstractPower {
         this.amount = Amount;
 
         // 添加一大一小两张能力图
-        String path128 = "CaiNongModResources/img/powers/SpireArtistPower84.png";
-        String path48 = "CaiNongModResources/img/powers/SpireArtistPower32.png";
+        String path128 = "cainongmodResources/img/powers/SpireArtistPower84.png";
+        String path48 = "cainongmodResources/img/powers/SpireArtistPower32.png";
         this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path48), 0, 0, 32, 32);
 

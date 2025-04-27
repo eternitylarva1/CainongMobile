@@ -1,6 +1,6 @@
 package cainongmod.Powers;
 
-import CaiNongMod.actions.PlayRandomCardAction;
+import cainongmod.actions.PlayRandomCardAction;
 import cainongmod.cainongmod;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -48,8 +48,8 @@ public class TangPower extends AbstractPower {
         this.amount = Amount;
 
         // 添加一大一小两张能力图
-        String path128 = "CaiNongModResources/img/powers/TangPower84.png";
-        String path48 = "CaiNongModResources/img/powers/TangPower32.png";
+        String path128 = "cainongmodResources/img/powers/TangPower84.png";
+        String path48 = "cainongmodResources/img/powers/TangPower32.png";
         this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path48), 0, 0, 32, 32);
 

@@ -1,10 +1,11 @@
 package cainongmod.cards;
 
-import CaiNongMod.helpers.ModHelper;
-import basemod.abstracts.CustomCard;
+
+import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.animations.VFXAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
+import com.megacrit.cardcrawl.android.mods.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
@@ -14,7 +15,7 @@ import com.megacrit.cardcrawl.vfx.combat.SearingBlowEffect;
 
 import java.util.ArrayList;
 
-import static CaiNongMod.Characters.CaiNong.Enums.CAINONG_CARD;
+import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.miscRng;
 import static com.megacrit.cardcrawl.dungeons.AbstractDungeon.player;
 
@@ -23,7 +24,7 @@ public class NongSearing extends CustomCard {
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     // private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME; // 读取本地化的名字
-    private static final String IMG_PATH = "CaiNongModResources/img/cards/NongSearing.png";
+    private static final String IMG_PATH = "cainongmodResources/img/cards/NongSearing.png";
     private static final int COST = 3;
     // private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION; // 读取本地化的描述
@@ -38,7 +39,7 @@ public class NongSearing extends CustomCard {
     }
 
     public NongSearing(int upgrades) {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        super(ID, NAME, getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.damage = this.baseDamage = 6;
         this.magicNumber = this.baseMagicNumber = 3;
         this.timesUpgraded = upgrades;

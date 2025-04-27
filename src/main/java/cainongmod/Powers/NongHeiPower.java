@@ -1,6 +1,6 @@
 package cainongmod.Powers;
 
-import CaiNongMod.relics.Factory;
+import cainongmod.relics.Factory;
 import cainongmod.cainongmod;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.RemoveSpecificPowerAction;
@@ -32,8 +32,8 @@ public class NongHeiPower extends AbstractPower {
         this.amount = Amount;
 
         // 添加一大一小两张能力图
-        String path128 = "CaiNongModResources/img/powers/NongHeiPower84.png";
-        String path48 = "CaiNongModResources/img/powers/NongHeiPower32.png";
+        String path128 = "cainongmodResources/img/powers/NongHeiPower84.png";
+        String path48 = "cainongmodResources/img/powers/NongHeiPower32.png";
         this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path128), 0, 0, 84, 84);
         this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path48), 0, 0, 32, 32);
 

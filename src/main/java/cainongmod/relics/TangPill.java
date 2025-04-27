@@ -4,23 +4,23 @@ package cainongmod.relics;
 import cainongmod.Powers.TangPower;
 import cainongmod.cainongmod;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
+import com.megacrit.cardcrawl.android.mods.AssetLoader;
 import com.megacrit.cardcrawl.android.mods.abstracts.CustomRelic;
 import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
-import com.megacrit.cardcrawl.helpers.ImageMaster;
 import com.megacrit.cardcrawl.relics.AbstractRelic;
 
 public class TangPill extends CustomRelic {
     // 遗物ID（此处的ModHelper在“04 - 本地化”中提到）
     public static final String ID =  cainongmod.makeId("TangPill");
     // 图片路径
-    private static final String IMG_PATH = "CaiNongModResources/img/relics/TangPill.png";
+    private static final String IMG_PATH = "cainongmodResources/img/relics/TangPill.png";
     // 遗物类型
     private static final RelicTier RELIC_TIER = RelicTier.BOSS;
     // 点击音效
     private static final LandingSound LANDING_SOUND = LandingSound.FLAT;
 
     public TangPill() {
-        super(ID, ImageMaster.loadImage(IMG_PATH), RELIC_TIER, LANDING_SOUND);
+        super(ID, AssetLoader.getTexture(cainongmod.MOD_ID,IMG_PATH), RELIC_TIER, LANDING_SOUND);
         this.counter = 0;
     }
 

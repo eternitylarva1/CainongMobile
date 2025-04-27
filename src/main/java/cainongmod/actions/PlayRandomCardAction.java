@@ -1,7 +1,7 @@
 package cainongmod.actions;
 
-import CaiNongMod.helpers.ModHelper;
-import CaiNongMod.relics.NaiLong;
+import cainongmod.helpers.ModHelper;
+import cainongmod.relics.NaiLong;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UnlimboAction;

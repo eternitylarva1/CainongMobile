@@ -1,11 +1,10 @@
 package cainongmod.character;
 
 import cainongmod.cainongmod;
-import cainongmod.cards.TestStrike;
+import cainongmod.cards.Strike;
 import cainongmod.enums.CardColorEnum;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
-
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.android.mods.AssetLoader;
 import com.megacrit.cardcrawl.android.mods.abstracts.CustomPlayer;
@@ -16,13 +15,14 @@ import com.megacrit.cardcrawl.core.EnergyManager;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.cutscenes.CutscenePanel;
 import com.megacrit.cardcrawl.events.city.Vampires;
-import com.megacrit.cardcrawl.helpers.*;
+import com.megacrit.cardcrawl.helpers.FontHelper;
+import com.megacrit.cardcrawl.helpers.Hitbox;
+import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
 import com.megacrit.cardcrawl.relics.SneckoEye;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
-
 
 import static cainongmod.cainongmod.getResourcePath;
 import static cainongmod.cainongmod.makeId;
@@ -122,7 +122,7 @@ public class Mycharacter extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
         for(int x = 0; x<5; x++) {
-            retVal.add(TestStrike.ID);
+
         }
         return retVal;
     }
@@ -165,13 +165,13 @@ public class Mycharacter extends CustomPlayer {
     // 翻牌事件出现的你的职业牌（一般设为打击）
     @Override
     public AbstractCard getStartCardForEvent() {
-        return new TestStrike();
+        return new Strike();
     }
 
     // 卡牌轨迹颜色
     @Override
     public Color getCardTrailColor() {
-        return cainongmod.CAINONG_CARD;
+        return cainongmod.CAINONG_CARDCOLOR;
     }
 
     // 高进阶带来的生命值损失
@@ -230,7 +230,7 @@ public class Mycharacter extends CustomPlayer {
     // 打心脏的颜色，不是很明显
     @Override
     public Color getSlashAttackColor() {
-        return cainongmod.CAINONG_CARD;
+        return cainongmod.CAINONG_CARDCOLOR;
     }
 
     // 吸血鬼事件文本，主要是他（索引为0）和她（索引为1）的区别（机器人另外）
@@ -242,7 +242,7 @@ public class Mycharacter extends CustomPlayer {
     // 卡牌选择界面选择该牌的颜色
     @Override
     public Color getCardRenderColor() {
-        return cainongmod.CAINONG_CARD;
+        return cainongmod.CAINONG_CARDCOLOR;
     }
 
     // 第三章面对心脏造成伤害时的特效

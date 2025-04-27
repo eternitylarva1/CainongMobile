@@ -12,7 +12,7 @@ public class ModHelper {
     public static boolean naiLong = true;
 
     public static String MakePath (String id) {
-        return "CaiNongMod:" + id;
+        return "cainongmod:" + id;
     }
 
     public static AbstractGameAction.AttackEffect AtkSound (AbstractCard card) {

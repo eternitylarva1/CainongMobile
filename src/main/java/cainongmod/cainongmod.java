@@ -1,6 +1,5 @@
 package cainongmod;
 
-import cainongmod.cards.TestStrike;
 import cainongmod.character.Mycharacter;
 import cainongmod.enums.CardColorEnum;
 import cainongmod.enums.LibraryTypeEnum;
@@ -11,7 +10,6 @@ import com.megacrit.cardcrawl.android.mods.interfaces.*;
 import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.core.Settings;
 import com.megacrit.cardcrawl.localization.*;
-import com.megacrit.cardcrawl.unlock.UnlockTracker;
 
 public class cainongmod implements EditCardsSubscriber,
                                        PostInitializeSubscriber,
@@ -19,7 +17,7 @@ public class cainongmod implements EditCardsSubscriber,
                                        EditRelicsSubscriber,
                                        EditKeywordsSubscriber,EditCharactersSubscriber {
     public static final String MOD_ID = "cainongmod";
-    public static final Color CAINONG_CARD = new Color(1.0F, 102.0F / 255.0F, 102.0F / 178.0F, 1.0F);
+    public static final Color CAINONG_CARDCOLOR = new Color(1.0F, 102.0F / 255.0F, 102.0F / 178.0F, 1.0F);
     private static final String MY_CHARACTER_BUTTON = getResourcePath("char/Character_Button.png");
 
     // 人物选择界面的立绘
@@ -39,7 +37,7 @@ public class cainongmod implements EditCardsSubscriber,
             bundle.frameOutlineColor =
             bundle.descBoxColor =
             bundle.trailVfxColor =
-            bundle.glowColor = CAINONG_CARD;
+            bundle.glowColor = CAINONG_CARDCOLOR;
         bundle.libraryType = LibraryTypeEnum.CAINONG_CARD;
         bundle.attackBg = getResourcePath("512/bg_attack_512.png");
         bundle.skillBg = getResourcePath("512/bg_skill_512.png");
@@ -60,7 +58,7 @@ public class cainongmod implements EditCardsSubscriber,
     }
 
     public static String getResourcePath(String path) {
-        return "CaiNongModResources/" + path;
+        return "CainongmodResources/" + path;
     }
 
     @Override
@@ -71,7 +69,7 @@ public class cainongmod implements EditCardsSubscriber,
     @Override
     public void receivePostInitialize() {
         BaseMod.getColorBundleMap().get(CardColorEnum.CAINONG_CARD).loadRegion();
-        UnlockTracker.unlockCard(TestStrike.ID);
+
     }
 
     @Override

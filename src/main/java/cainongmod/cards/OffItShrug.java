@@ -1,10 +1,11 @@
 package cainongmod.cards;
 
-import CaiNongMod.helpers.ModHelper;
-import basemod.abstracts.CustomCard;
+
+import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
+import com.megacrit.cardcrawl.android.mods.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
 import com.megacrit.cardcrawl.cards.DamageInfo;
 import com.megacrit.cardcrawl.characters.AbstractPlayer;
@@ -12,14 +13,14 @@ import com.megacrit.cardcrawl.core.CardCrawlGame;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
-import static CaiNongMod.Characters.CaiNong.Enums.CAINONG_CARD;
+import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class OffItShrug extends CustomCard {
     public static final String ID = ModHelper.MakePath("OffItShrug");
     private static final CardStrings CARD_STRINGS = CardCrawlGame.languagePack.getCardStrings(ID); // 从游戏系统读取本地化资源
     // private static final String NAME = "打击";
     private static final String NAME = CARD_STRINGS.NAME; // 读取本地化的名字
-    private static final String IMG_PATH = "CaiNongModResources/img/cards/OffItShrug_Skill.png";
+    private static final String IMG_PATH = "cainongmodResources/img/cards/OffItShrug_Skill.png";
     private static final int COST = 1;
     // private static final String DESCRIPTION = "造成 !D! 点伤害。";
     private static final String DESCRIPTION = CARD_STRINGS.DESCRIPTION; // 读取本地化的描述
@@ -31,7 +32,7 @@ public class OffItShrug extends CustomCard {
     private boolean isUsed = false;
 
     public OffItShrug() {
-        super(ID, NAME, IMG_PATH, COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
+        super(ID, NAME, getResourcePath(IMG_PATH), COST, DESCRIPTION, TYPE, COLOR, RARITY, TARGET);
         this.block = this.baseBlock = 8;
         this.damage = this.baseDamage = 9;
         this.magicNumber = this.baseMagicNumber = 1;
@@ -78,7 +79,7 @@ public class OffItShrug extends CustomCard {
                 this.target = CardTarget.ENEMY;
                 this.rawDescription = CARD_STRINGS.UPGRADE_DESCRIPTION;
                 this.initializeDescription();
-                this.loadCardImage("CaiNongModResources/img/cards/OffItShrug_Attack.png");
+                this.loadCardImage("cainongmodResources/img/cards/OffItShrug_Attack.png");
                 if (upgraded) {
                     this.upgradeMagicNumber(1);
                 }
@@ -87,7 +88,7 @@ public class OffItShrug extends CustomCard {
                 this.target = CardTarget.SELF;
                 this.rawDescription = CARD_STRINGS.DESCRIPTION;
                 this.initializeDescription();
-                this.loadCardImage("CaiNongModResources/img/cards/OffItShrug_Skill.png");
+                this.loadCardImage("cainongmodResources/img/cards/OffItShrug_Skill.png");
                 if (upgraded) {
                     this.upgradeMagicNumber(-1);
                 }

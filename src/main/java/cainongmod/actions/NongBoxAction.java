@@ -15,7 +15,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 
 import java.util.ArrayList;
 
-import static CaiNongMod.Characters.CaiNong.Enums.CAINONG_LIBRARY;
+import static cainongmod.enums.CardColorEnum.CAINONG_LIBRARY;
 
 public class NongBoxAction extends AbstractGameAction {
 

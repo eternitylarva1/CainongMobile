@@ -1,6 +1,6 @@
 package cainongmod.actions;
 
-import CaiNongMod.helpers.ModHelper;
+import cainongmod.helpers.ModHelper;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.utility.NewQueueCardAction;
 import com.megacrit.cardcrawl.actions.utility.UnlimboAction;

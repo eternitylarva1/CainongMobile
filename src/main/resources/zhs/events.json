@@ -1,5 +1,5 @@
 {
-  "CaiNongMod:SeeYouAgain": {
+  "cainongmod:SeeYouAgain": {
     "NAME": "又见涅奥!",
     "DESCRIPTIONS": [
       "你看到一个奇怪的 传送门 , 走进去之后你又回到了塔底。 NL NL \" ~至少...见到第一个boss吧...~ \"",
@@ -11,7 +11,7 @@
       "[离开] "
     ]
   },
-  "CaiNongMod:LateNightLive": {
+  "cainongmod:LateNightLive": {
     "NAME": "深夜直播",
     "DESCRIPTIONS": [
       "----可以祝睡觉的噶人闷晚安吗?------------ NL 可以祝睡觉的噶人闷晚安吗?---------------- NL -------------------------- #y2%胜率闹麻 ---- NL --------可以祝睡觉的噶人闷晚安吗?-------- NL ---------------------------------------",
@@ -37,7 +37,7 @@
       "点最大生命值"
     ]
   },
-  "CaiNongMod:OnAWhim": {
+  "cainongmod:OnAWhim": {
     "NAME": "一时兴起",
     "DESCRIPTIONS": [
       "你roll到了一个 #g爽种 和一个 #r毒种 ，这时发现 ~一只狗~ 走了过来。",

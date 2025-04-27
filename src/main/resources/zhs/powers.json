@@ -1,148 +1,148 @@
 {
-  "CaiNongMod:NongHeiPower": {
+  "cainongmod:NongHeiPower": {
     "NAME": "农黑",
     "DESCRIPTIONS": [
       "造成的伤害提高 #b",
       "受到的攻击伤害提高 #b"
     ]
   },
-  "CaiNongMod:NongBaiPower": {
+  "cainongmod:NongBaiPower": {
     "NAME": "农白",
     "DESCRIPTIONS": [
       "造成的伤害降低 #b25%"
     ]
   },
-  "CaiNongMod:TangPower": {
+  "cainongmod:TangPower": {
     "NAME": "唐",
     "DESCRIPTIONS": [
       "回合开始时随机打出 #b",
       " 张牌"
     ]
   },
-  "CaiNongMod:NongdialPower": {
+  "cainongmod:NongdialPower": {
     "NAME": "农晷",
     "DESCRIPTIONS": [
       "每次洗牌获得 #b",
       " 点 *能量 。"
     ]
   },
-  "CaiNongMod:WhirlingAroundLikeAClownPower": {
+  "cainongmod:WhirlingAroundLikeAClownPower": {
     "NAME": "转来转去像个小丑",
     "DESCRIPTIONS": [
       "回合开始时发现 #b",
       " 张绿色牌"
     ]
   },
-  "CaiNongMod:UnmannedPower": {
+  "cainongmod:UnmannedPower": {
     "NAME": "无人",
     "DESCRIPTIONS": [
       "打出攻击牌时失去所有 #y无实体 "
     ]
   },
-  "CaiNongMod:BideTimePower": {
+  "cainongmod:BideTimePower": {
     "NAME": "按兵不动",
     "DESCRIPTIONS": [
       "下回合开始时获得 #b8 活力 和 [E] "
     ]
   },
-  "CaiNongMod:GoodSeedPower": {
+  "cainongmod:GoodSeedPower": {
     "NAME": "农种",
     "DESCRIPTIONS": [
       "在 #b",
       " 回合内结束战斗"
     ]
   },
-  "CaiNongMod:BadSeedPower": {
+  "cainongmod:BadSeedPower": {
     "NAME": "毒种",
     "DESCRIPTIONS": [
       "在 #b",
       " 回合后结束战斗"
     ]
   },
-  "CaiNongMod:DoNothingPower": {
+  "cainongmod:DoNothingPower": {
     "NAME": "装唐",
     "DESCRIPTIONS": [
       "空过 #b",
       " 回合"
     ]
   },
-  "CaiNongMod:EpilepsyPower": {
+  "cainongmod:EpilepsyPower": {
     "NAME": "发癫",
     "DESCRIPTIONS": [
       "剩余",
       "张牌"
     ]
   },
-  "CaiNongMod:TooSickPower": {
+  "cainongmod:TooSickPower": {
     "NAME": "好②心啊",
     "DESCRIPTIONS": [
       "抽到状态牌时抽取另一张状态牌并获得",
       "点 格挡 "
     ]
   },
-  "CaiNongMod:WhiteLotusPower": {
+  "cainongmod:WhiteLotusPower": {
     "NAME": "白莲积木",
     "DESCRIPTIONS": [
       "每个回合第一次损失生命值时, 抽",
       "张牌"
     ]
   },
-  "CaiNongMod:GoodTransitionCaltropsPower": {
+  "cainongmod:GoodTransitionCaltropsPower": {
     "NAME": "优质过渡",
     "DESCRIPTIONS": [
       "回合结束时获得 #b",
       " 层 *荆棘 "
     ]
   },
-  "CaiNongMod:NongAbacusPower": {
+  "cainongmod:NongAbacusPower": {
     "NAME": "农盘",
     "DESCRIPTIONS": [
       "抽牌或洗牌时获得 #b",
       " 点 格挡 "
     ]
   },
-  "CaiNongMod:NoseNibPower": {
+  "cainongmod:NoseNibPower": {
     "NAME": "肛鼻尖",
     "DESCRIPTIONS": [
       "第 #b",
       " 张攻击牌造成双倍伤害"
     ]
   },
-  "CaiNongMod:FireRaidPower": {
+  "cainongmod:FireRaidPower": {
     "NAME": "火焰突袭",
     "DESCRIPTIONS": [
       "回合开始时将 #b",
       " 张 #r灼伤 洗入抽牌堆"
     ]
   },
-  "CaiNongMod:TrancePower": {
+  "cainongmod:TrancePower": {
     "NAME": "昏睡",
     "DESCRIPTIONS": [
       "跳过你的下 #b",
       " 个回合并恢复最大生命值的 #y30%"
     ]
   },
-  "CaiNongMod:DeadBranchPower": {
+  "cainongmod:DeadBranchPower": {
     "NAME": "树枝",
     "DESCRIPTIONS": [
       "消耗一张牌时随机获取 #b",
       " 张红裤衩的牌"
     ]
   },
-  "CaiNongMod:CandyBallPower": {
+  "cainongmod:CandyBallPower": {
     "NAME": "农化",
     "DESCRIPTIONS": [
       "你的 *唐 不会消耗能量。"
     ]
   },
-  "CaiNongMod:SpireArtistPower": {
+  "cainongmod:SpireArtistPower": {
     "NAME": "尖塔艺术家",
     "DESCRIPTIONS": [
       "所有敌人在 #b",
       " 回合后爆炸。"
     ]
   },
-  "CaiNongMod:HuiEyePower": {
+  "cainongmod:HuiEyePower": {
     "NAME": "天眼",
     "DESCRIPTIONS": [
       "一时兴起了"
