@@ -1,7 +1,8 @@
 package cainongmod.cards;
 
 
-import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
+import cainongmod.Powers.NongBaiPower;
+import cainongmod.helpers.ModHelper;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
 import com.megacrit.cardcrawl.android.mods.abstracts.CustomCard;
 import com.megacrit.cardcrawl.cards.AbstractCard;
@@ -13,6 +14,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
 import java.util.Iterator;
 
+import static cainongmod.cainongmod.getResourcePath;
 import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class DefendToKill extends CustomCard {

@@ -1,6 +1,6 @@
 package cainongmod.cards;
 
-import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
+import cainongmod.helpers.ModHelper;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.DamageAction;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -13,6 +13,7 @@ import com.megacrit.cardcrawl.dungeons.AbstractDungeon;
 import com.megacrit.cardcrawl.localization.CardStrings;
 import com.megacrit.cardcrawl.monsters.AbstractMonster;
 
+import static cainongmod.cainongmod.getResourcePath;
 import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class CarnageRuinTheRedPants extends CustomCard {
@@ -57,7 +58,7 @@ public class CarnageRuinTheRedPants extends CustomCard {
             public void update() {
                 AbstractPlayer p = AbstractDungeon.player;
                 for (AbstractCard c : AbstractDungeon.player.drawPile.group) {
-                    if (c.type == CardType.ATTACK && c.cost >= 2 && p.hand.size() <= BaseMod.MAX_HAND_SIZE - 1) {
+                    if (c.type == CardType.ATTACK && c.cost >= 2 && p.hand.size() <= 9) {
                         p.drawPile.removeCard(c);
                         p.drawPile.addToTop(c);
                         this.addToBot(new DrawCardAction(1));

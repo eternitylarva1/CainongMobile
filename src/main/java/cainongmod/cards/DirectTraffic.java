@@ -1,7 +1,9 @@
 package cainongmod.cards;
 
 
-import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
+import cainongmod.Powers.NongBaiPower;
+import cainongmod.Powers.NongHeiPower;
+import cainongmod.helpers.ModHelper;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ApplyPowerAction;
 import com.megacrit.cardcrawl.actions.common.GainBlockAction;
@@ -15,6 +17,7 @@ import com.megacrit.cardcrawl.monsters.AbstractMonster;
 import com.megacrit.cardcrawl.powers.VulnerablePower;
 import com.megacrit.cardcrawl.powers.WeakPower;
 
+import static cainongmod.cainongmod.getResourcePath;
 import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class DirectTraffic extends CustomCard {

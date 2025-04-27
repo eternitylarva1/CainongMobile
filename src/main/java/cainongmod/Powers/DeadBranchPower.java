@@ -38,8 +38,8 @@ public class DeadBranchPower extends AbstractPower {
         // 添加一大一小两张能力图
         String path128 = "cainongmodResources/img/powers/DeadBranchPower84.png";
         String path48 = "cainongmodResources/img/powers/DeadBranchPower32.png";
-        this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path128), 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path48), 0, 0, 32, 32);
+        this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path128)), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path48)), 0, 0, 32, 32);
 
         // 首次添加能力更新描述
         this.updateDescription();

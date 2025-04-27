@@ -2,9 +2,9 @@ package cainongmod.cards;
 
 import cainongmod.Powers.BadSeedPower;
 import cainongmod.Powers.DoNothingPower;
-
+import cainongmod.Powers.EpilepsyPower;
 import cainongmod.Powers.GoodSeedPower;
-import cainongmod.helpers.ModHelper;import static cainongmod.cainongmod.getResourcePath;
+import cainongmod.helpers.ModHelper;
 import com.megacrit.cardcrawl.actions.common.GainGoldAction;
 import com.megacrit.cardcrawl.actions.watcher.ChooseOneAction;
 import com.megacrit.cardcrawl.android.mods.abstracts.CustomCard;
@@ -19,6 +19,7 @@ import com.megacrit.cardcrawl.vfx.SpotlightPlayerEffect;
 
 import java.util.ArrayList;
 
+import static cainongmod.cainongmod.getResourcePath;
 import static cainongmod.enums.CardColorEnum.CAINONG_CARD;
 
 public class Demand extends CustomCard {

@@ -1,6 +1,5 @@
 package cainongmod.Powers;
 
-import basemod.BaseMod;
 import cainongmod.cainongmod;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.megacrit.cardcrawl.actions.common.DrawCardAction;
@@ -36,8 +35,8 @@ public class TooSickPower extends AbstractPower {
         // 添加一大一小两张能力图
         String path128 = "cainongmodResources/img/powers/TooSickPower84.png";
         String path48 = "cainongmodResources/img/powers/TooSickPower32.png";
-        this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path128), 0, 0, 84, 84);
-        this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,path48), 0, 0, 32, 32);
+        this.region128 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path128)), 0, 0, 84, 84);
+        this.region48 = new TextureAtlas.AtlasRegion(AssetLoader.getTexture(cainongmod.MOD_ID,cainongmod.getResourcePath(path48)), 0, 0, 32, 32);
 
         // 首次添加能力更新描述
         this.updateDescription();
@@ -50,7 +49,7 @@ public class TooSickPower extends AbstractPower {
             this.flash();
             AbstractPlayer p = AbstractDungeon.player;
             for (AbstractCard c : p.drawPile.group) {
-                if (c.type == AbstractCard.CardType.STATUS && p.hand.size() <= BaseMod.MAX_HAND_SIZE - 1) {
+                if (c.type == AbstractCard.CardType.STATUS && p.hand.size() <=9) {
                     p.drawPile.removeCard(c);
                     p.drawPile.addToTop(c);
                     this.addToTop(new DrawCardAction(1));

@@ -1,5 +1,6 @@
 package cainongmod.actions;
 
+import cainongmod.enums.LibraryTypeEnum;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
 import com.megacrit.cardcrawl.actions.common.ExhaustSpecificCardAction;
 import com.megacrit.cardcrawl.actions.common.MakeTempCardInDiscardAction;
@@ -15,7 +16,7 @@ import com.megacrit.cardcrawl.helpers.CardLibrary;
 
 import java.util.ArrayList;
 
-import static cainongmod.enums.CardColorEnum.CAINONG_LIBRARY;
+
 
 public class NongBoxAction extends AbstractGameAction {
 
@@ -94,7 +95,7 @@ public class NongBoxAction extends AbstractGameAction {
     }
 
     private AbstractCard getRandomCard() {
-        ArrayList<AbstractCard> CaiNong = CardLibrary.getCardList(CAINONG_LIBRARY);
+        ArrayList<AbstractCard> CaiNong = CardLibrary.getCardList(LibraryTypeEnum.CAINONG_CARD);
         int roll = AbstractDungeon.cardRandomRng.random(99);
         AbstractCard.CardRarity cardRarity;
         if (roll < 55) {
