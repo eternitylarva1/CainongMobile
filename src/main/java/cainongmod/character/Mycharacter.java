@@ -3,6 +3,7 @@ package cainongmod.character;
 import cainongmod.cainongmod;
 import cainongmod.cards.Strike;
 import cainongmod.enums.CardColorEnum;
+import cainongmod.relics.OldComputer;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.megacrit.cardcrawl.actions.AbstractGameAction;
@@ -19,7 +20,6 @@ import com.megacrit.cardcrawl.helpers.FontHelper;
 import com.megacrit.cardcrawl.helpers.Hitbox;
 import com.megacrit.cardcrawl.helpers.ScreenShake;
 import com.megacrit.cardcrawl.localization.CharacterStrings;
-import com.megacrit.cardcrawl.relics.SneckoEye;
 import com.megacrit.cardcrawl.screens.CharSelectInfo;
 
 import java.util.ArrayList;
@@ -122,7 +122,7 @@ public class Mycharacter extends CustomPlayer {
     public ArrayList<String> getStartingDeck() {
         ArrayList<String> retVal = new ArrayList<>();
         for(int x = 0; x<5; x++) {
-
+            retVal.add(Strike.ID);
         }
         return retVal;
     }
@@ -130,7 +130,7 @@ public class Mycharacter extends CustomPlayer {
     // 初始遗物的ID，可以先写个原版遗物凑数
     public ArrayList<String> getStartingRelics() {
         ArrayList<String> retVal = new ArrayList<>();
-        retVal.add(SneckoEye.ID);
+        retVal.add(OldComputer.ID);
         return retVal;
     }
 
